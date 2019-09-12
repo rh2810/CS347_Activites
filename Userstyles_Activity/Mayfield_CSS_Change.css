@@ -1,27 +1,64 @@
-element.style {
+@media screen {
+    body {
+        background-color: ghostwhite;
+    }
+    .main {
+        background-color: white;
+        border: 1px ridge darkgray;
+        margin: 15px auto;
+        padding: 15px;
+        max-width: 960px;
+    }
 }
-<style>
+
+A:link    {text-decoration: none}
+A:visited {text-decoration: none}
+A:active  {text-decoration: none}
+A:hover   {text-decoration: underline}
+
+h1 {
+    font-size: 15pt;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding-top: 2ex;
+}
+
+h2 {
+    font-size: 13pt;
+    page-break-after: avoid;
+}
 
 /*Added h3 style to change color of headers*/
 h3 {
     color: red;
-}
-h3 {
-    color: dodgerblue;
     padding-top: 1ex;
     page-break-before: always;
 }
-user agent stylesheet
-h3 {
-    display: block;
-    font-size: 1.17em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+
+pre {
+    background-color: whitesmoke;
+    margin: 0px;
+    padding: 1em;
+    page-break-inside: avoid;
+    white-space: pre-wrap;
+}
+
+code {
+    background-color: whitesmoke;
+    color: crimson;
+    padding-left: 2pt;
+    padding-right: 2pt;
+}
+
+em {
+    color: firebrick;
     font-weight: bold;
 }
-user agent stylesheet
-html {
-    color: -internal-root-color;
+
+.input {
+    color: #00C87D;
+}
+
+.output {
+    color: #000000;
 }
